@@ -95,3 +95,36 @@ function initTaskBoard() {
 
 // Wait until DOM is fully loaded
 document.addEventListener("DOMContentLoaded", initTaskBoard);
+
+
+/* the tasks do not appear on the page 
+import { loadAllTasks } from "./tasks/taskmanager.js";
+import { renderAllTasks } from "./ui/renderTasks.js";
+import { setupModal } from "./ui/modalManager.js";
+import { getFormData, validateFormData, clearFormFields } from "./tasks/formUtils.js";
+import { addTask } from "./tasks/taskmanager.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  // load from storage (initialised with initialData if needed)
+  const tasks = loadAllTasks();
+  renderAllTasks(tasks);
+
+  // Set-up modal open/close and view modal handlers
+  setupModal();
+
+  // ensures adding via keyboard submission works
+  const form = document.getElementById("task-form");
+  const taskModal = document.getElementById("task-modal");
+  form?.addEventListener("submit", (ev) => {
+    ev.preventDefault();
+    const data = getFormData();
+    if (!validateFormData(data)) {
+      alert("Please enter title and description.");
+      return;
+    }
+    const updated = addTask(data);
+    renderAllTasks(updated);
+    clearFormFields();
+    if (typeof taskModal.close === "function") taskModal.close();
+  });
+}); */
