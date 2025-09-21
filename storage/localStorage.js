@@ -14,13 +14,13 @@ export function loadTasksFromStorage() {
         }
     }
 
- // If no tasks in storage, initialize with initialTasks
+ // If there's no tasks in storage, initialize with initialTasks
 localStorage.setItem("tasks", JSON.stringify(initialTasks));
 return initialTasks;
 }
 
 /**
- * Saves the given task array to localStorage.
+ * Save the given task array to localStorage.
  * @param {Array<Object>} tasks - The array of tasks to save.
  */
 export function saveTasksToStorage(tasks) {
