@@ -42,3 +42,63 @@ In this project, you will implement a task management system where **tasks are p
 ## Expected Outcome
 
 A fully functional task management system where tasks are dynamically loaded from **local storage**, tasks can be **added through a modal**, and the application **remains consistent** after refreshing the page. The code will be modular, well-documented, and easy to maintain, following best practices for JavaScript development.
+
+# 🚀 Task Management System
+
+A fully functional task management web application that allows users to organise their daily tasks. Tasks are persisted in local storage, so that they remain available even after refreshing the page. The application offers an interface where users can add, update and view tasks in different catergories (todo, doing and done.)
+
+## ✅ Project Desripction 
+
+- add tasks to the board through modal interface.
+- organise tasks into 3 different catergories.
+- persist tasks in loacl storage so that tasks are not lost after refreshing the page.
+
+## ⚙️ Technologies Used
+
+- HTML for building structure and content.
+- CSS for styling the application.
+- JavaScript for task logic, localStorage interaction and UI behaviour (modularised into sperate files for better maintainability.)
+- Local Storage API for persisting tasks across page reloads.
+
+## 🖼️ Features 
+
+- Persist Task Storage: tasks are stored in localStorage, making them persist across page refreshering the apllication.
+- Task Catergories: tasks can be organised into todo, doing and done columns.
+- Add Tasks Modal: users can add tasks through a modal with input fields for/with title, description and status.
+-Dynamic Task Rendering: tasks are dynamically rendered based on their status.
+- Data Validation: ensures that users are provided valid data before submitting a task.
+
+## 🛠️ Setup Instructions 
+
+**Prerequisites** 
+- Modern web browser (eg. Chrome, Firefox)
+
+**Istallation Steps**
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Open the index.html file in your browser (double-click the index.html file)
+
+## 🎨 Usage
+
+1. Adding a Task
+- Click on the `Add New Task` button in the top right corner.
+- Fill in the task title, description and select a status from the dropdown.
+- Press `Save` purple button to add the task to the board.
+
+2. View Tasks By Status
+- Tasks automatically catergorised into 3 columns (todo, doin and done.)
+
+## 💻 Interaction 
+
+1. **Clicking the `Add New Tasks` Button**
+When you click on the `Add New Tasks` button, a modal is suppose to pop up, aloowing you to enter the task details. Once saved/submitted, the task will appear on the board based on its selected status.
+
+2. **Task Catergories**
+The tasks will be catergorised into 3 columns based on their status (todo, doing and done.)
+
+3. **Modifying Tasks**
+Users can interact with tasks in each catergory/column by clicking on them and modifying by means of editing or deleting tasks.
+
+## NOTES 
+
+having trouble with the modal actually becoming visible/opening when the `Add New Tasks` button is pressed.
