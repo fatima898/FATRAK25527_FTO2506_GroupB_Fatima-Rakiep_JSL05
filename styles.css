@@ -242,6 +242,34 @@ dialog {
   /*font-family: "Plus Jakarta Sans", sans-serif;*/
 }
 
+#modal-save {
+  background-color: #635fc7; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0 auto; 
+}
+
+#modal-save:hover {
+  background-color: #5a52d6; /*  darker purple on hover */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.85rem;
+  display: none;
+  margin-top: 2px;
+}
+
+.error-message::before {
+  content: "⚠";
+}
+
+
 /* Header */
 .modal-header {
   display: flex;
@@ -274,6 +302,50 @@ dialog {
 .close-btn:focus {
   outline: none;
 }
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  background-color: #f4f4f4;
+}
+
+.add-task-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #635fc7; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.kanban-column {
+  flex: 1;
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 300px;
+}
+
+.task-div {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
 /* Form elements */
 form label {
